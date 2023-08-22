@@ -1,0 +1,71 @@
+main{
+    text-align: center;
+}
+
+.sliders-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    place-items: center;
+}
+.slider-container {
+    width: 75%;
+}
+
+.slider-container >p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.slider{
+    width: inherit;
+}
+
+.xAxis path {
+    display: none;
+  }
+  .tick line {
+    display: none;
+  }  
+
+.number {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-family: 'cursive';
+    position: relative;
+    color:black;
+    background-color: red;
+    
+
+}
+.percent {
+    position: absolute; /* This makes the percent div positioned relative to parent */
+    right: calc(50% + 13px); /* This will make sure the percent div is 50px away from middle div */
+}
+
+.whole {
+    text-align:right;
+    flex-grow: 1; /* This will make left and right divs take up the remaining space */
+    flex-basis: 0; /* Reset to 0 to calculate sizes based on content and remaining space */
+}
+
+.decimal {
+    text-align:center; /* Adjust based on your need */
+    
+}
+.fraction {
+    text-align:left;
+    flex-grow: 1; /* This will make left and right divs take up the remaining space */
+    flex-basis: 0; /* Reset to 0 to calculate sizes based on content and remaining space */
+}
+
+@media (max-width: 600px) {
+    .number {
+      transform: rotate(-90deg) translateY(-1px);
+      text-anchor: end;
+    }
+  }
+.xAxis {
+    background-color: green;
+}

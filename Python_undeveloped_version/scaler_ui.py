@@ -1,5 +1,5 @@
 import tkinter as tk
-from Python_undeveloped_version.scaler_engine import calculate_values
+from scaler_engine import calculate_values
 
 root = tk.Tk()
 root.geometry('400x400')
