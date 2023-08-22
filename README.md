@@ -1,8 +1,10 @@
-# Bar Chart Visualizer
+# UI Percent Scaler
 
 ## Description
 
 This project is intended as a personal study of the D3.js svg-manipulation library. The Ui Percent Scaler is best demonstrated visually:
+
+![Demonstration](Resources\Animation.gif)
 
 The value of each bar is a percentage of the sum of the range of each bar that is determined by a linear slope controlled by the Slope slider. The Element Count controls the amount of data points represented along the x-axis. The sum of all data points is equal to 100%.
 
